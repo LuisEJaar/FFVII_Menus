@@ -39,7 +39,10 @@ function checking (e) {
         } else if (currentMenuItem === "status") {
             statusM()
         } else if (currentMenuItem === "order") {
-            order()
+            const fieldset = document.querySelector('.menuFieldset')
+            if (fieldset.disabled != true){
+                order()
+            } 
         } else if (currentMenuItem === "limit") {
             limit()
         } else if (currentMenuItem === "config") {
