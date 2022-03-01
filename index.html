@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css?version=2" rel="stylesheet">
+    <title>FF7 Menus</title>
+</head>
+<body>
+    <section class="totalContainer">
+        <section class="dadsOldTelly">
+            <img class="telly" src="./img/background1.png" alt="">
+        </section>
+          
+        <section class="mainMenuContainer">
+            <section class="orderChange">
+                <div class="orderPointerContainer">
+                    <div class="pointer" id="cloudPointer">
+                        <label for="cloud">C
+                            <input class="characterButton" type="radio" name="order" id="cloud" checked>
+                            <img class="cloudPointer" src="./img/pointer.png" alt="pointer">
+                            <img class="cloudTempPointer" src="./img/pointer.png" alt="pointer">
+                        </label>
+                    </div>
+                    <div class="pointer" id="barretPointer">
+                        <label for="barret">B
+                            <input class="characterButton" type="radio" name="order" id="barret">
+                            <img class="barretPointer" src="./img/pointer.png" alt="pointer">
+                            <img class="barretTempPointer" src="./img/pointer.png" alt="pointer">
+                        </label>
+                    </div>
+                </div>                     
+            </section>
+            <section class="lineUp">
+                <section class="character" id="cloudC">
+                    <section class="profilePic">
+                        <img class="cloudPicture" src="img/Cloud.JPG" alt="CloudPicture">
+                    </section>
+                    <section class="stats">
+                        <span class="characterName">Cloud</span>
+                        <ul class="stat name">
+                            <li>
+                                <span>LV</span>
+                            </li>
+                            <li>
+                                <span>HP</span>
+                            </li>
+                            <li>
+                                <span>MP</span>
+                            </li>
+                        </ul>
+                        <ul class="stat value">
+                            <li>
+                                <span class="levelV">7</span>
+                            </li>
+                            <li class="HP">
+                                <div class="hpValues">
+                                    <span class="total valueN">314</span>
+                                    <span class="valueN">/</span>
+                                    <span class="current valueN">259</span>
+                                </div>
+                                <div>
+                                    <meter value="259" max="314"></meter>
+                                </div>
+                            </li>
+                            <li class="meter MP">
+                                <div class="mpValues">
+                                    <span class="total valueN">57</span>
+                                    <span class="valueN">/</span>
+                                    <span class="current valueN">54</span>
+                                </div>
+                                <div>
+                                    <meter value="54" max="57"></meter>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="levelLimit">
+                        <section class="level">
+                            <span>next level</span>
+                            <progress value="10" max="100">10%</progress>
+                        </section>
+                        <section class="limit">
+                            <span>Limit level  1</span>
+                            <progress value="70" max="100">70%</progress>
+                        </section>
+                    </section>
+                </section>
+                
+                <section class="character" id="barretC">
+                    <section class="profilePic">
+                        <img class="bck barretPicture" src="img/Barret.JPG" alt="BarretPicture">
+                    </section>
+                    <section class="stats">
+                        <span class="characterName">Barret</span>
+                        <ul class="stat name">
+                            <li>
+                                <span>LV</span>
+                            </li>
+                            <li>
+                                <span>HP</span>
+                            </li>
+                            <li>
+                                <span>MP</span>
+                            </li>
+                        </ul>
+                        <ul class="stat value">
+                            <li>
+                                <span class="levelV">6</span>
+                            </li>
+                            <li class="HP">
+                                <div class="hpValues">
+                                    <span class="total valueN">326</span>
+                                    <span class="valueN">/</span>
+                                    <span class="current valueN">326</span>
+                                </div>
+                                <div>
+                                    <meter value="326" max="326"></meter>
+                                </div>
+                            </li>
+                            <li class="meter MP">
+                                <div class="mpValues">
+                                    <span class="total valueN">43</span>
+                                    <span class="valueN">/</span>
+                                    <span class="current valueN">43</span>
+                                </div>
+                                <div>
+                                    <meter value="43" max="43"></meter>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="levelLimit">
+                        <section class="level">
+                            <span>next level</span>
+                            <progress value="3" max="100">3%</progress>
+                        </section>
+                        <section class="limit">
+                            <span>Limit level  1</span>
+                            <progress value="40" max="100">40%</progress>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="menu">
+                <form action="">
+                    <fieldset class="menuFieldset">
+                        <div class="pointer">
+                            <label id="forItem" for="item">Item
+                                <input class="menuButton" type="radio" name="menu" id="item" checked>
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+                        
+                        <div class="pointer">
+                            <label for="magic">Magic
+                                <input class="menuButton" type="radio" name="menu" id="magic">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <div class="pointer">
+                            <label for="materia">Materia
+                                <input class="menuButton" type="radio" name="menu" id="materia">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+                        
+                        <div class="pointer">
+                            <label for="equip">Equip
+                                <input class="menuButton" type="radio" name="menu" id="equip">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <div class="pointer">
+                            <label for="status">Status
+                                <input class="menuButton" type="radio" name="menu" id="status">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <div class="pointer">
+                            <label id="forOrder" for="order">Order
+                                <input class="menuButton" type="radio" name="menu" id="order">
+                                <img class="configPointer" src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <div class="pointer">
+                            <label for="limit">Limit
+                                <input class="menuButton" type="radio" name="menu" id="limit">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <div class="pointer">
+                            <label for="config">Config
+                                <input class="menuButton" type="radio" name="menu" id="config">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+    
+                        <br>
+    
+                        <div class="pointer">
+                            <label for="save">Save
+                                <input class="menuButton" type="radio" name="menu" id="save">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+                        
+                        <div class="pointer">
+                            <label for="quit">Quit
+                                <input class="menuButton" type="radio" name="menu" id="quit">
+                                <img src="./img/pointer.png" alt="pointer">
+                            </label>
+                        </div>
+                    </fieldset>  
+                </form>
+            </section>
+            <section class="timeCash">
+                <div class="time">
+                    <p>Time</p>
+                    <p>0:06:00</p>
+                </div>
+                <div class="cash">
+                    <p>Gil</p>
+                    <p>282</p>
+                </div>
+            </section>
+            <section class="area">
+                <p>No. 1 Reactor</p>
+            </section>
+        </section>
+        <!-- <section class="itemMenuContainer"></section>
+        <section class="magicMenuContainer"></section>
+        <section class="materiaMenuContainer"></section>
+        <section class="equipMenuContainer"></section>
+        <section class="statusMenuContainer"></section>
+        <section class="limitMenuContainer"></section>
+        <section class="configMenuContainer"></section> -->
+    </section>   
+<script src="./js/main.js"></script>    
+</body>
+</html>
